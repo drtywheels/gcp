@@ -4,7 +4,7 @@ set -e
 
 date=$(date "+%Y%m%d%H%M")
 cluster_name="codeship-gcloud-test-${date}"
-IMAGE=gcr.io/projectp-162904/alpine
+#IMAGE=gcr.io/projectp-162904/alpine
 PROJECT=projectp-162904
 DEFAULT_ZONE=us-central1-a
 
