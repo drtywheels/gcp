@@ -5,8 +5,8 @@ googleclouddeployment:
   add_docker: true
   volumes:
     - ./:/deploy
-app:
-  build:
-    dockerfile_path: Dockerfile
-    image: gcr.io/projectp-162904/alpine
-    encrypted_env_file: google_deployment.env.encrypted
+#app:
+#  build:
+#    dockerfile_path: Dockerfile
+#    image: gcr.io/projectp-162904/alpine
+#    encrypted_env_file: google_deployment.env.encrypted
