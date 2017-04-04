@@ -19,7 +19,7 @@ gcloud config set project $PROJECT
 gcloud compute instances create testmachine
 
 # Stopping an Instance in Google Compute Engine
-#gcloud compute instances delete testmachine -q
+gcloud compute instances delete testmachine -q
 
 
 #echo "Starting a small cluster with a single instance"
