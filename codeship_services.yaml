@@ -1,0 +1,12 @@
+googleclouddeployment:
+  image: codeship/google-cloud-deployment
+  encrypted_env_file: google_deployment.env.encrypted
+  # Add Docker if you want to interact with the Google Container Engine and Google Container Registry
+  add_docker: true
+  volumes:
+    - ./:/deploy
+app:
+  build:
+    dockerfile_path: Dockerfile
+    image: gcr.io/projectp-162904/alpine
+    encrypted_env_file: google_deployment.env.encrypted
