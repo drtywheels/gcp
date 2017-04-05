@@ -1,2 +1,11 @@
-- service: googleclouddeployment
-  command: /deploy/deploy_to_gcp.sh
+- service: app
+  type: push
+  image_name: gcr.io/company_name/container_name
+  registry: https://gcr.io
+  dockercfg_service: gcr_dockercfg
+# Set up script that interacts with Gcloud after the container push
+- service: deployment
+  command: /deploy/deploy_to_google.sh
+
+#- service: googleclouddeployment
+#  command: /deploy/deploy_to_gcp.sh

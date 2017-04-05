@@ -18,6 +18,8 @@ gcloud config set project $PROJECT
 # Starting an Instance in Google Compute Engine
 gcloud compute instances create testmachine
 
+sleep 300
+
 # Stopping an Instance in Google Compute Engine
 gcloud compute instances delete testmachine -q
 
