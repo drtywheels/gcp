@@ -15,3 +15,8 @@ gcr_dockercfg:
   image: codeship/gcr-dockercfg-generator
   add_docker: true
   encrypted_env_file: environment.encrypted
+app:
+  build:
+    dockerfile_path: Dockerfile
+    image: gcr.io/projectp-162904/gcr-dockercfg-generator
+    encrypted_env_file: google_deployment.env.encrypted
