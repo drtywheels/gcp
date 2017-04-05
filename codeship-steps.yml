@@ -1,6 +1,6 @@
 - service: app
   type: push
-  image_name: gcr.io/company_name/container_name
+  image_name: gcr.io/projectp-162904/gcr-dockercfg-generator
   registry: https://gcr.io
   dockercfg_service: gcr_dockercfg
 # Set up script that interacts with Gcloud after the container push
